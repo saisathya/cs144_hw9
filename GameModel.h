@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "PlayerModel.h"
+using namespace std;
 
 class GameModel{
 public:
@@ -16,6 +17,6 @@ public:
 private:
     PlayerModel player1, player2;
     int totalRounds, currentRound, wins, ties, loss;
-}
+};
 
 #endif // GAMEMODEL_H_INCLUDED

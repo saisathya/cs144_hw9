@@ -2,6 +2,7 @@
 #define PLAYERMODEL_H_INCLUDED
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class PlayerModel{
@@ -15,6 +16,7 @@ public:
 };
 
 class HumanModel : public PlayerModel{
+public:
     HumanModel();
     ~HumanModel();
 
@@ -22,9 +24,13 @@ class HumanModel : public PlayerModel{
 };
 
 class ComputerModel : public PlayerModel{
+public:
     ComputerModel();
     ~ComputerModel();
 
     virtual Moves makeMove();
+private:
+    int sequenceLength;
+    vector<Moves> humanSequence;
 };
 #endif // PLAYERMODEL_H_INCLUDED

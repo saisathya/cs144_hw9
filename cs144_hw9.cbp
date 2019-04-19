@@ -37,6 +37,8 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
+		<Unit filename="GameModel.cpp" />
+		<Unit filename="PlayerModel.h" />
 		<Unit filename="cs144_hw9App.cpp" />
 		<Unit filename="cs144_hw9App.h" />
 		<Unit filename="cs144_hw9Main.cpp" />
