@@ -1,4 +1,4 @@
-/***************************************************************
+/*/***************************************************************
  * Name:      cs144_hw9Main.h
  * Purpose:   Defines Application Frame
  * Author:    Sai Sathyanantha Rajandiran (saisathyanantha@gmail.com)
@@ -6,7 +6,7 @@
  * Copyright: Sai Sathyanantha Rajandiran (www.sathya-rajan.com)
  * License:
  **************************************************************/
-
+/*
 #ifndef CS144_HW9MAIN_H
 #define CS144_HW9MAIN_H
 
@@ -35,3 +35,4 @@ class cs144_hw9Frame: public wxFrame
 
 
 #endif // CS144_HW9MAIN_H
+*/

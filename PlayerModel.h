@@ -3,12 +3,14 @@
 
 #include <iostream>
 #include <vector>
+#include <stdlib.h>
+#include <time.h>
+
 using namespace std;
 
 class PlayerModel{
 public:
     PlayerModel();
-    ~PlayerModel();
 
     enum Moves {ROCK, PAPER, SCISSORS};
 
@@ -17,20 +19,18 @@ public:
 
 class HumanModel : public PlayerModel{
 public:
-    HumanModel();
-    ~HumanModel();
+    HumanModel(): PlayerModel(){};
 
     virtual Moves makeMove();
 };
 
 class ComputerModel : public PlayerModel{
 public:
-    ComputerModel();
-    ~ComputerModel();
+    ComputerModel(): PlayerModel(){};
 
     virtual Moves makeMove();
 private:
     int sequenceLength;
-    vector<Moves> humanSequence;
+    vector<PlayerModel::Moves> humanSequence;
 };
 #endif // PLAYERMODEL_H_INCLUDED
